@@ -31,4 +31,4 @@ TODO: Write credits
 [Apache License v2.0](LICENSE)
 [![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg?style=flat)](http://www.apache.org/licenses/LICENSE-2.0.html)
 
-[maksymka]: https://cutt.ly/maksymka "Українська латинка: усі "за" та "проти" | Кирилиця чи латиниця | Абетка та розкладка клавіатури"
+[maksymka]: https://cutt.ly/maksymka "Українська латинка: усі \"за\" та \"проти\" | Кирилиця чи латиниця | Абетка та розкладка клавіатури"
