@@ -422,7 +422,7 @@
   </organization>
   <properties>
     <!-- version -->
-    <aws-plugin.version>0.2.32</aws-plugin.version>
+    <aws-plugin.version>0.2.33</aws-plugin.version>
     <changelist>-SNAPSHOT</changelist>
     <clean-plugin.version>3.2.0</clean-plugin.version>
     <!-- java and maven -->
