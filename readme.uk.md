@@ -4,7 +4,7 @@
 [![Українська](https://img.shields.io/badge/%F0%9F%93%84-%D0%A3%D0%BA%D1%80%D0%B0%D1%97%D0%BD%D1%81%D1%8C%D0%BA%D0%BE%D1%8E-blue)](readme.uk.md)
 [![Latynka](https://img.shields.io/badge/%F0%9F%93%84-Latynka-blue)](readme.uk@latynka.md)
 
-Це Telegram бот що перекладає на українську латинку Максима Прудеуса, більше про це у відео [cutt.ly/maksymka][maksymka]
+Це Telegram бот що перекладає на українську латинку Максима Прудеуса, більше про це у відео [Українська латинка: усі "за" та "проти"][maksymka]
 
 ## Ліцензія
 
