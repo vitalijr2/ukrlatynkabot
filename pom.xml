@@ -434,7 +434,7 @@
     <jacoco-plugin.version>0.8.8</jacoco-plugin.version>
     <!-- plugins -->
     <jar-plugin.version>3.3.0</jar-plugin.version>
-    <jetbrains-annotations.version>24.0.0</jetbrains-annotations.version>
+    <jetbrains-annotations.version>24.0.1</jetbrains-annotations.version>
     <json.version>20220924</json.version>
     <junit-jupiter.version>5.9.2</junit-jupiter.version>
     <junit-pioneer.version>2.0.0</junit-pioneer.version>
