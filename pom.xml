@@ -426,7 +426,7 @@
     <changelist>-SNAPSHOT</changelist>
     <clean-plugin.version>3.2.0</clean-plugin.version>
     <!-- java and maven -->
-    <compiler-plugin.version>3.10.1</compiler-plugin.version>
+    <compiler-plugin.version>3.11.0</compiler-plugin.version>
     <enforcer-plugin.version>3.2.1</enforcer-plugin.version>
     <failsafe-plugin.version>2.22.2</failsafe-plugin.version>
     <flatten-plugin.version>1.3.0</flatten-plugin.version>
