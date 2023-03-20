@@ -457,7 +457,7 @@
     <shade-plugin.version>3.4.1</shade-plugin.version>
     <slf4j-aws-lambda.version>3.0.6</slf4j-aws-lambda.version>
     <slf4j.version>2.0.6</slf4j.version>
-    <surefire-plugin.version>2.22.2</surefire-plugin.version>
+    <surefire-plugin.version>3.0.0</surefire-plugin.version>
     <!-- AWS -->
     <templating-plugin.version>1.0.0</templating-plugin.version>
   </properties>
