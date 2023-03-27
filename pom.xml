@@ -439,7 +439,7 @@
     <junit-jupiter.version>5.9.2</junit-jupiter.version>
     <junit-pioneer.version>2.0.0</junit-pioneer.version>
     <lambda-core.version>1.2.2</lambda-core.version>
-    <lambda-events.version>3.11.0</lambda-events.version>
+    <lambda-events.version>3.11.1</lambda-events.version>
     <lambda.name>ukrlatynkabot</lambda.name>
     <maven.compiler.release>11</maven.compiler.release>
     <minimal-version.java>11</minimal-version.java>
