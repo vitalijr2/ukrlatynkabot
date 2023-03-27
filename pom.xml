@@ -450,7 +450,7 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     <propertiesEncoding>ISO-8859-1</propertiesEncoding>
-    <resources-plugin.version>3.3.0</resources-plugin.version>
+    <resources-plugin.version>3.3.1</resources-plugin.version>
     <!-- dependencies -->
     <revision>1.0.0</revision>
     <sha1/>
