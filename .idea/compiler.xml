@@ -9,8 +9,5 @@
         <module name="ukrlatynkabot" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="ukrlatynkabot" target="11" />
-    </bytecodeTargetLevel>
   </component>
 </project>
