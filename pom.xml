@@ -404,7 +404,7 @@
       <artifactId>junit-pioneer</artifactId>
       <groupId>org.junit-pioneer</groupId>
       <scope>test</scope>
-      <version>2.0.0</version>
+      <version>2.0.1</version>
     </dependency>
   </dependencies>
   <description>The Telegram bot who transliterate from Ukrainian Cyrillic to Latynka.</description>
