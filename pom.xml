@@ -427,17 +427,17 @@
     <clean-plugin.version>3.2.0</clean-plugin.version>
     <!-- java and maven -->
     <compiler-plugin.version>3.11.0</compiler-plugin.version>
-    <enforcer-plugin.version>3.2.1</enforcer-plugin.version>
+    <enforcer-plugin.version>3.3.0</enforcer-plugin.version>
     <failsafe-plugin.version>3.0.0</failsafe-plugin.version>
-    <flatten-plugin.version>1.4.0</flatten-plugin.version>
+    <flatten-plugin.version>1.4.1</flatten-plugin.version>
     <hamcrest.version>2.2</hamcrest.version>
-    <jacoco-plugin.version>0.8.8</jacoco-plugin.version>
+    <jacoco-plugin.version>0.8.9</jacoco-plugin.version>
     <!-- plugins -->
     <jar-plugin.version>3.3.0</jar-plugin.version>
     <jetbrains-annotations.version>24.0.1</jetbrains-annotations.version>
     <json.version>20230227</json.version>
     <junit-jupiter.version>5.9.2</junit-jupiter.version>
-    <junit-pioneer.version>2.0.0</junit-pioneer.version>
+    <junit-pioneer.version>2.0.1</junit-pioneer.version>
     <lambda-core.version>1.2.2</lambda-core.version>
     <lambda-events.version>3.11.1</lambda-events.version>
     <lambda.name>ukrlatynkabot</lambda.name>
@@ -446,7 +446,7 @@
     <minimal-version.maven>3.8.1</minimal-version.maven>
     <mock-slf4j-impl.version>2.0.0</mock-slf4j-impl.version>
     <!-- test -->
-    <mockito.version>5.2.0</mockito.version>
+    <mockito.version>5.3.0</mockito.version>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     <propertiesEncoding>ISO-8859-1</propertiesEncoding>
