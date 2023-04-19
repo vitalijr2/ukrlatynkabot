@@ -13,14 +13,27 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package uk.bot_by.ukrlatynka.bot;
+package io.gitlab.r2.ukrlatynka;
+
+import static io.gitlab.r2.telegram_bot.TelegramUtils.getId;
 
 import org.json.JSONObject;
+import io.gitlab.r2.telegram_bot.AbstractUpdateFactory;
+import io.gitlab.r2.telegram_bot.Update;
 
 public class LatynkaUpdateFactory extends AbstractUpdateFactory {
 
   @Override
-  Update parseMessage(JSONObject message) {
+  protected Update processInlineQuery(JSONObject message) {
+    logger.trace("Process inline query");
+
+    long inlineQueryId = getId(message);
+
+    return null;
+  }
+
+  @Override
+  protected Update processMessage(JSONObject message) {
     return null;
   }
 

@@ -1,4 +1,4 @@
-package uk.bot_by.ukrlatynka.bot;
+package io.gitlab.r2.telegram_bot;
 
 import static java.util.Collections.singleton;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
@@ -23,6 +23,7 @@ import org.junit.jupiter.api.extension.ExtendWith;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.EmptySource;
 import org.junit.jupiter.params.provider.ValueSource;
+import org.mockito.Mockito;
 import org.mockito.Spy;
 import org.mockito.junit.jupiter.MockitoExtension;
 import org.slf4j.Logger;
@@ -93,21 +94,26 @@ class AbstractUpdateFactoryTest {
   @DisplayName("To handle a message")
   @Test
   void handleMessage() {
-    doAnswer(invocationOnMock -> mock(Update.class)).when(factory)
-        .parseMessage(isA(JSONObject.class));
+    doAnswer(invocationOnMock -> Mockito.mock(Update.class)).when(factory)
+        .processMessage(isA(JSONObject.class));
 
     // when
     var update = factory.parseUpdate("{\"message\":{\"test\":\"passed\"}}");
 
     // then
-    verify(factory).parseMessage(isA(JSONObject.class));
+    verify(factory).processMessage(isA(JSONObject.class));
     assertNotNull(update);
   }
 
   static class TestUpdateFactory extends AbstractUpdateFactory {
 
     @Override
-    Update parseMessage(JSONObject message) {
+    protected Update processInlineQuery(JSONObject message) {
+      return null;
+    }
+
+    @Override
+    protected Update processMessage(JSONObject message) {
       return null;
     }
 

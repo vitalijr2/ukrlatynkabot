@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package uk.bot_by.ukrlatynka.aws_lambda;
+package io.gitlab.r2.aws_lambda;
 
 import static java.util.Collections.singletonMap;
 

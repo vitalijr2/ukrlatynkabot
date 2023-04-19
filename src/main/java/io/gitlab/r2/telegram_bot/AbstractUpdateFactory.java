@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package uk.bot_by.ukrlatynka.bot;
+package io.gitlab.r2.telegram_bot;
 
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
@@ -24,11 +24,13 @@ import org.slf4j.LoggerFactory;
 
 public abstract class AbstractUpdateFactory implements UpdateFactory {
 
+  private static final String INLINE_QUERY = "inline_query";
   private static final String MESSAGE = "message";
   private static final int MAX_SUBSTRING_LENGTH = 1024;
   protected final Logger logger = LoggerFactory.getLogger(getClass());
 
-  abstract Update parseMessage(JSONObject message);
+  protected abstract Update processInlineQuery(JSONObject message);
+  protected abstract Update processMessage(JSONObject message);
 
   public @Nullable Update parseUpdate(@NotNull String updateText) {
     Update update = null;
@@ -39,8 +41,10 @@ public abstract class AbstractUpdateFactory implements UpdateFactory {
       if (logger.isTraceEnabled()) {
         logger.trace(body.toString());
       }
-      if (body.has(MESSAGE)) {
-        update = parseMessage(body.getJSONObject(MESSAGE));
+      if (body.has(INLINE_QUERY)) {
+        update = processInlineQuery(body.getJSONObject(INLINE_QUERY));
+      } else if (body.has(MESSAGE)) {
+        update = processMessage(body.getJSONObject(MESSAGE));
       } else {
         logger.info("Unprocessed update: {}", body.keySet());
       }

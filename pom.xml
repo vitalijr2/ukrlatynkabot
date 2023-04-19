@@ -24,17 +24,17 @@
       <plugin>
         <artifactId>maven-clean-plugin</artifactId>
         <groupId>org.apache.maven.plugins</groupId>
-        <version>${clean-plugin.version}</version>
+        <version>3.2.0</version>
       </plugin>
       <plugin>
         <artifactId>maven-enforcer-plugin</artifactId>
         <configuration>
           <rules>
             <requireJavaVersion>
-              <version>[${minimal-version.java},)</version>
+              <version>11</version>
             </requireJavaVersion>
             <requireMavenVersion>
-              <version>[${minimal-version.maven},)</version>
+              <version>3.8.1</version>
             </requireMavenVersion>
           </rules>
         </configuration>
@@ -54,7 +54,7 @@
           </execution>
         </executions>
         <groupId>org.apache.maven.plugins</groupId>
-        <version>${enforcer-plugin.version}</version>
+        <version>3.3.0</version>
       </plugin>
       <plugin>
         <artifactId>flatten-maven-plugin</artifactId>
@@ -78,7 +78,7 @@
           </execution>
         </executions>
         <groupId>org.codehaus.mojo</groupId>
-        <version>${flatten-plugin.version}</version>
+        <version>1.4.0</version>
       </plugin>
       <plugin>
         <artifactId>templating-maven-plugin</artifactId>
@@ -91,42 +91,44 @@
           </execution>
         </executions>
         <groupId>org.codehaus.mojo</groupId>
-        <version>${templating-plugin.version}</version>
+        <version>1.0.0</version>
       </plugin>
       <plugin>
         <artifactId>maven-resources-plugin</artifactId>
         <configuration>
-          <propertiesEncoding>${propertiesEncoding}</propertiesEncoding>
+          <propertiesEncoding>ISO-8859-1</propertiesEncoding>
         </configuration>
         <groupId>org.apache.maven.plugins</groupId>
-        <version>${resources-plugin.version}</version>
+        <version>3.3.1</version>
       </plugin>
       <plugin>
         <artifactId>maven-compiler-plugin</artifactId>
         <configuration>
-          <release>${maven.compiler.release}</release>
+          <release>11</release>
           <showDeprecation>true</showDeprecation>
         </configuration>
         <groupId>org.apache.maven.plugins</groupId>
-        <version>${compiler-plugin.version}</version>
+        <version>3.11.0</version>
       </plugin>
       <plugin>
         <artifactId>maven-surefire-plugin</artifactId>
         <configuration>
           <classpathDependencyExcludes>
-            <classpathDependencyExclude>uk.bot-by:slf4j-aws-lambda</classpathDependencyExclude>
+            <classpathDependencyExclude>uk.bot-by:slf4j-aws-lambda-core</classpathDependencyExclude>
+            <classpathDependencyExclude>uk.bot-by:slf4j-aws-lambda-logger
+            </classpathDependencyExclude>
           </classpathDependencyExcludes>
           <properties>
             <groups>fast</groups>
           </properties>
         </configuration>
         <groupId>org.apache.maven.plugins</groupId>
-        <version>${surefire-plugin.version}</version>
+        <version>3.0.0</version>
       </plugin>
       <plugin>
         <artifactId>maven-jar-plugin</artifactId>
         <groupId>org.apache.maven.plugins</groupId>
-        <version>${jar-plugin.version}</version>
+        <version>3.3.0</version>
       </plugin>
       <plugin>
         <artifactId>maven-shade-plugin</artifactId>
@@ -176,7 +178,7 @@
           </execution>
         </executions>
         <groupId>org.apache.maven.plugins</groupId>
-        <version>${shade-plugin.version}</version>
+        <version>3.4.1</version>
       </plugin>
       <plugin>
         <artifactId>maven-failsafe-plugin</artifactId>
@@ -184,7 +186,9 @@
           <classpathDependencyExcludes>
             <classpathDependencyExclude>com.ocarlsen.test:mock-slf4j-impl
             </classpathDependencyExclude>
-            <classpathDependencyExclude>uk.bot-by:slf4j-aws-lambda</classpathDependencyExclude>
+            <classpathDependencyExclude>uk.bot-by:slf4j-aws-lambda-core</classpathDependencyExclude>
+            <classpathDependencyExclude>uk.bot-by:slf4j-aws-lambda-logger
+            </classpathDependencyExclude>
           </classpathDependencyExcludes>
           <environmentVariables>
             <BOT_LOG_LEVEL>TRACE</BOT_LOG_LEVEL>
@@ -205,7 +209,7 @@
           </execution>
         </executions>
         <groupId>org.apache.maven.plugins</groupId>
-        <version>${failsafe-plugin.version}</version>
+        <version>3.0.0</version>
       </plugin>
       <plugin>
         <artifactId>jacoco-maven-plugin</artifactId>
@@ -296,7 +300,7 @@
           </execution>
         </executions>
         <groupId>org.jacoco</groupId>
-        <version>${jacoco-plugin.version}</version>
+        <version>0.8.9</version>
       </plugin>
       <plugin>
         <artifactId>aws-maven-plugin</artifactId>
@@ -305,7 +309,7 @@
           <functionName>${lambda.name}</functionName>
         </configuration>
         <groupId>com.github.davidmoten</groupId>
-        <version>${aws-plugin.version}</version>
+        <version>0.2.33</version>
       </plugin>
     </plugins>
     <resources>
@@ -326,32 +330,32 @@
     <dependency>
       <artifactId>aws-lambda-java-core</artifactId>
       <groupId>com.amazonaws</groupId>
-      <version>${lambda-core.version}</version>
+      <version>1.2.2</version>
     </dependency>
     <dependency>
       <artifactId>aws-lambda-java-events</artifactId>
       <groupId>com.amazonaws</groupId>
-      <version>${lambda-events.version}</version>
+      <version>3.11.1</version>
     </dependency>
     <dependency>
       <artifactId>json</artifactId>
       <groupId>org.json</groupId>
-      <version>${json.version}</version>
+      <version>20230227</version>
     </dependency>
     <dependency>
       <artifactId>annotations</artifactId>
       <groupId>org.jetbrains</groupId>
-      <version>${jetbrains-annotations.version}</version>
+      <version>24.0.1</version>
     </dependency>
     <dependency>
       <artifactId>slf4j-api</artifactId>
       <groupId>org.slf4j</groupId>
-      <version>${slf4j.version}</version>
+      <version>2.0.7</version>
     </dependency>
     <dependency>
-      <artifactId>slf4j-aws-lambda</artifactId>
+      <artifactId>slf4j-aws-lambda-logger</artifactId>
       <groupId>uk.bot-by</groupId>
-      <version>${slf4j-aws-lambda.version}</version>
+      <version>1.0.0</version>
     </dependency>
     <!-- test -->
     <dependency>
@@ -388,23 +392,23 @@
       <artifactId>hamcrest</artifactId>
       <groupId>org.hamcrest</groupId>
       <scope>test</scope>
-      <version>${hamcrest.version}</version>
+      <version>2.2</version>
     </dependency>
     <dependency>
       <artifactId>mock-slf4j-impl</artifactId>
       <groupId>com.ocarlsen.test</groupId>
       <scope>test</scope>
-      <version>${mock-slf4j-impl.version}</version>
+      <version>2.0.0</version>
     </dependency>
     <dependency>
       <artifactId>junit-pioneer</artifactId>
       <groupId>org.junit-pioneer</groupId>
       <scope>test</scope>
-      <version>${junit-pioneer.version}</version>
+      <version>2.0.0</version>
     </dependency>
   </dependencies>
   <description>The Telegram bot who transliterate from Ukrainian Cyrillic to Latynka.</description>
-  <groupId>uk.bot-by.bot</groupId>
+  <groupId>io.gitlab.r2.bot</groupId>
   <inceptionYear>2023</inceptionYear>
   <licenses>
     <license>
@@ -416,51 +420,21 @@
   </licenses>
   <modelVersion>4.0.0</modelVersion>
   <name>Ukrainian Latynka Bot</name>
-  <organization>
-    <name>bot-by</name>
-    <url>https://bot-by.uk</url>
-  </organization>
   <properties>
-    <!-- version -->
-    <aws-plugin.version>0.2.33</aws-plugin.version>
     <changelist>-SNAPSHOT</changelist>
-    <clean-plugin.version>3.2.0</clean-plugin.version>
-    <!-- java and maven -->
-    <compiler-plugin.version>3.11.0</compiler-plugin.version>
-    <enforcer-plugin.version>3.2.1</enforcer-plugin.version>
-    <failsafe-plugin.version>3.0.0</failsafe-plugin.version>
-    <flatten-plugin.version>1.4.0</flatten-plugin.version>
-    <hamcrest.version>2.2</hamcrest.version>
-    <jacoco-plugin.version>0.8.8</jacoco-plugin.version>
-    <!-- plugins -->
-    <jar-plugin.version>3.3.0</jar-plugin.version>
-    <jetbrains-annotations.version>24.0.1</jetbrains-annotations.version>
-    <json.version>20230227</json.version>
     <junit-jupiter.version>5.9.2</junit-jupiter.version>
-    <junit-pioneer.version>2.0.0</junit-pioneer.version>
-    <lambda-core.version>1.2.2</lambda-core.version>
-    <lambda-events.version>3.11.1</lambda-events.version>
     <lambda.name>ukrlatynkabot</lambda.name>
-    <maven.compiler.release>11</maven.compiler.release>
-    <minimal-version.java>11</minimal-version.java>
-    <minimal-version.maven>3.8.1</minimal-version.maven>
-    <mock-slf4j-impl.version>2.0.0</mock-slf4j-impl.version>
-    <!-- test -->
     <mockito.version>5.2.0</mockito.version>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-    <propertiesEncoding>ISO-8859-1</propertiesEncoding>
-    <resources-plugin.version>3.3.1</resources-plugin.version>
-    <!-- dependencies -->
     <revision>1.0.0</revision>
     <sha1/>
-    <shade-plugin.version>3.4.1</shade-plugin.version>
-    <slf4j-aws-lambda.version>3.1.0</slf4j-aws-lambda.version>
-    <slf4j.version>2.0.7</slf4j.version>
-    <surefire-plugin.version>3.0.0</surefire-plugin.version>
-    <!-- AWS -->
-    <templating-plugin.version>1.0.0</templating-plugin.version>
   </properties>
-  <url>https://gitlab.com/bot-by/ukrlatynkabot</url>
+  <scm>
+    <connection>scm:git:https://gitlab.com/radio_rogal/ukrlatynkabot.git</connection>
+    <developerConnection>scm:git:git@gitlab.com:radio_rogal/ukrlatynkabot.git</developerConnection>
+    <url>https://gitlab.com/radio_rogal/ukrlatynkabot</url>
+  </scm>
+  <url>https://gitlab.com/radio_rogal/ukrlatynkabot</url>
   <version>${revision}${sha1}${changelist}</version>
 </project>

@@ -1,4 +1,4 @@
-package uk.bot_by.ukrlatynka.bot;
+package io.gitlab.r2.telegram_bot;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.collection.IsIterableContainingInAnyOrder.containsInAnyOrder;
@@ -6,13 +6,13 @@ import static org.junit.jupiter.api.Assertions.assertAll;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
-import static uk.bot_by.ukrlatynka.bot.TelegramUtils.deleteMessage;
-import static uk.bot_by.ukrlatynka.bot.TelegramUtils.getChatId;
-import static uk.bot_by.ukrlatynka.bot.TelegramUtils.getChatTitle;
-import static uk.bot_by.ukrlatynka.bot.TelegramUtils.getId;
-import static uk.bot_by.ukrlatynka.bot.TelegramUtils.getMessageId;
-import static uk.bot_by.ukrlatynka.bot.TelegramUtils.getTitle;
-import static uk.bot_by.ukrlatynka.bot.TelegramUtils.isBotMessage;
+import static io.gitlab.r2.telegram_bot.TelegramUtils.deleteMessage;
+import static io.gitlab.r2.telegram_bot.TelegramUtils.getChatId;
+import static io.gitlab.r2.telegram_bot.TelegramUtils.getChatTitle;
+import static io.gitlab.r2.telegram_bot.TelegramUtils.getId;
+import static io.gitlab.r2.telegram_bot.TelegramUtils.getMessageId;
+import static io.gitlab.r2.telegram_bot.TelegramUtils.getTitle;
+import static io.gitlab.r2.telegram_bot.TelegramUtils.isBotMessage;
 
 import org.json.JSONObject;
 import org.junit.jupiter.api.BeforeEach;
