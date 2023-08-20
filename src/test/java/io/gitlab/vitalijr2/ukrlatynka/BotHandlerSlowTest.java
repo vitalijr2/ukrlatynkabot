@@ -1,4 +1,4 @@
-package io.gitlab.r2.ukrlatynka;
+package io.gitlab.vitalijr2.ukrlatynka;
 
 import static org.junit.jupiter.api.Assertions.assertAll;
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -15,9 +15,8 @@ import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
-import io.gitlab.r2.telegram_bot.Update;
-import io.gitlab.r2.telegram_bot.UpdateFactory;
-import io.gitlab.r2.ukrlatynka.BotHandler;
+import io.gitlab.vitalijr2.telegram_bot.Update;
+import io.gitlab.vitalijr2.telegram_bot.UpdateFactory;
 
 @ExtendWith(MockitoExtension.class)
 @Tag("slow")

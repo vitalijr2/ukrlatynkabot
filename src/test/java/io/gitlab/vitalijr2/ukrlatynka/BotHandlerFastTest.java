@@ -1,4 +1,4 @@
-package io.gitlab.r2.ukrlatynka;
+package io.gitlab.vitalijr2.ukrlatynka;
 
 import static java.util.Collections.singletonMap;
 import static org.hamcrest.MatcherAssert.assertThat;
@@ -34,9 +34,8 @@ import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import io.gitlab.r2.telegram_bot.Update;
-import io.gitlab.r2.telegram_bot.UpdateFactory;
-import io.gitlab.r2.ukrlatynka.BotHandler;
+import io.gitlab.vitalijr2.telegram_bot.Update;
+import io.gitlab.vitalijr2.telegram_bot.UpdateFactory;
 
 @ExtendWith(MockitoExtension.class)
 @Tag("fast")
