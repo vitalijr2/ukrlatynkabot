@@ -1,5 +1,5 @@
 /*
- * Copyright 2023 Witalij Berdinskich
+ * Copyright 2023 Vitalij Berdinskih
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package io.gitlab.r2.ukrlatynka;
+package io.gitlab.vitalijr2.ukrlatynka;
 
 import static java.util.Objects.isNull;
 import static java.util.Objects.nonNull;
@@ -29,8 +29,8 @@ import org.jetbrains.annotations.VisibleForTesting;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.slf4j.MDC;
-import io.gitlab.r2.aws_lambda.LambdaUtils;
-import io.gitlab.r2.telegram_bot.UpdateFactory;
+import io.gitlab.vitalijr2.aws_lambda.LambdaUtils;
+import io.gitlab.vitalijr2.telegram_bot.UpdateFactory;
 
 public class BotHandler implements
     RequestHandler<APIGatewayProxyRequestEvent, APIGatewayProxyResponseEvent> {

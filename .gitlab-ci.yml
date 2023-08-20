@@ -38,10 +38,6 @@ test:
 sast:
   stage: test
 
-spotbugs-sast:
-  variables:
-    SAST_JAVA_VERSION: 11
-
 coverage:
   stage: verify
   script:

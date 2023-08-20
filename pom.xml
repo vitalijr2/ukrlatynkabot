@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-	Copyright 2023 Witalij Berdinskich
+	Copyright 2023 Vitalij Berdinskih
 
 	Licensed under the Apache License, Version 2.0 (the "License");
 	you may not use this file except in compliance with the License.
@@ -431,10 +431,10 @@
     <sha1/>
   </properties>
   <scm>
-    <connection>scm:git:https://gitlab.com/radio_rogal/ukrlatynkabot.git</connection>
-    <developerConnection>scm:git:git@gitlab.com:radio_rogal/ukrlatynkabot.git</developerConnection>
-    <url>https://gitlab.com/radio_rogal/ukrlatynkabot</url>
+    <connection>scm:git:https://gitlab.com/vitalijr2/ukrlatynkabot.git</connection>
+    <developerConnection>scm:git:git@gitlab.com:vitalijr2/ukrlatynkabot.git</developerConnection>
+    <url>https://gitlab.com/vitalijr2/ukrlatynkabot</url>
   </scm>
-  <url>https://gitlab.com/radio_rogal/ukrlatynkabot</url>
+  <url>https://gitlab.com/vitalijr2/ukrlatynkabot</url>
   <version>${revision}${sha1}${changelist}</version>
 </project>
