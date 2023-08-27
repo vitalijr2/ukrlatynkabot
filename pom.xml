@@ -424,7 +424,7 @@
     <changelist>-SNAPSHOT</changelist>
     <junit-jupiter.version>5.10.0</junit-jupiter.version>
     <lambda.name>ukrlatynkabot</lambda.name>
-    <mockito.version>5.4.0</mockito.version>
+    <mockito.version>5.5.0</mockito.version>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     <revision>1.0.0</revision>
