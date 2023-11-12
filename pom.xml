@@ -422,7 +422,7 @@
   <name>Ukrainian Latynka Bot</name>
   <properties>
     <changelist>-SNAPSHOT</changelist>
-    <junit-jupiter.version>5.10.0</junit-jupiter.version>
+    <junit-jupiter.version>5.10.1</junit-jupiter.version>
     <lambda.name>ukrlatynkabot</lambda.name>
     <mockito.version>5.7.0</mockito.version>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
